@@ -24,4 +24,47 @@ img {
 
 body {
   background-color: aqua;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 500px 50px;
+  grid-template-rows: 400px 50px;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+.gallery_container {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  position: relative;
+  overflow: hidden;
+}
+
+.image_container  {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  position: absolute;
+}
+
+.nav_left {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.nav_right {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.nav_buttons {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.test {
+  border: 2px solid black;
 }
