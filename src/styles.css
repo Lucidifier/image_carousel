@@ -47,17 +47,43 @@ body {
   display: flex;
   width: 500px;
   height: 400px;
-  position: absolute;
+  position: relative;
+}
+
+.position_one {
+  right: 0px;
+}
+
+.position_two {
+  right: 500px;
+}
+
+.position_three {
+  right: 1000px;
+}
+
+.position_four {
+  right: 1500px;
 }
 
 .nav_left {
   grid-column: 1/2;
   grid-row: 1/2;
+  color: black;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+
 }
 
 .nav_right {
   grid-column: 3/4;
   grid-row: 1/2;
+  color: black;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+
 }
 
 .nav_buttons {
@@ -65,6 +91,24 @@ body {
   grid-row: 2/3;
 }
 
+.nav_buttons_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.nav_buttons_container > div {
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+
 .test {
   border: 2px solid black;
+}
+
+.status_active {
+  background-color: red;
 }
