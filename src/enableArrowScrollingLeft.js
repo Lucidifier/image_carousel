@@ -6,6 +6,7 @@ function enableArrowScrollingLeft() {
   const imageContainer = document.querySelector('.image_container');
   const navButtonsArray = Array.from(navButtons);
 
+  //checks the position of gallery based on status of nav buttons, and changes the slides and nav button status accordingly
   if(navButtonsArray[1].classList.contains('status_active')) {
     disableNavButtonsStyle();
     navButtonsArray[0].classList.add('status_active');

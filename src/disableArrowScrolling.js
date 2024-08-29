@@ -7,6 +7,7 @@ function disableArrowScrolling() {
   const arrowScrollLeft = document.querySelector('.nav_left');
   const arrowScrollRight = document.querySelector('.nav_right');
 
+  //disables left or right arrow if gallery is on the most left/right image
   if(navButtonsArray[0].classList.contains('status_active')) {
     arrowScrollLeft.classList.add('disabled_arrow');
   } else {
