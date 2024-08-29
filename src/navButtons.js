@@ -1,6 +1,8 @@
+import disableArrowScrolling from "./disableArrowScrolling";
+
 function navButtonStatusChange() {
   const navButtons = document.querySelectorAll('.nav_buttons_container > div');
-  const imageContainer = document.querySelector('.image_container')
+  const imageContainer = document.querySelector('.image_container');
   //reset all buttons
   for(const element of navButtons) {
     element.classList.remove('status_active')
@@ -35,6 +37,8 @@ function navButtonStatusChange() {
       default:
         console.log('error');
     }
+    //run arrowScrolling test so arrows follow buttons scrolling
+    disableArrowScrolling();
 }
 
-export default navButtonStatusChange;
+export {navButtonStatusChange};
