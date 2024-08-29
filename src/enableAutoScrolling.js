@@ -5,8 +5,8 @@ function enableAutoScrolling() {
   const navButtons = document.querySelectorAll('.nav_buttons_container > div');
   const imageContainer = document.querySelector('.image_container');
   const navButtonsArray = Array.from(navButtons);
-  console.log('init autoscrolling');
 
+  //every 5 seconds check which nav button has status active and move the slideshow to the right accordingly
   setInterval(function() {
     if(navButtonsArray[0].classList.contains('status_active')) {
       disableNavButtonsStyle();
